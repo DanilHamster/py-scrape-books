@@ -10,7 +10,7 @@ from itemadapter import ItemAdapter
 
 class JsonLinesWriterPipeline:
     def open_spider(self, spider):
-        self.file = open("books.jl", "w", encoding="utf-8")
+        self.file = open("books.jl", "a", encoding="utf-8")
 
     def close_spider(self, spider):
         self.file.close()
